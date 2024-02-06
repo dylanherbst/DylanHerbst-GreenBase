@@ -2,7 +2,7 @@ import { Outlet, Navigate } from "react-router-dom";
 import { useUserContext } from "../Context/UserContext";
 
 
-function ProtectedRoute({ redirectPath = '/signIn', children }) {
+function ProtectedRoute({ redirectPath = '/', children }) {
 const { currentUser } = useUserContext();
 
 if (!currentUser.email) {

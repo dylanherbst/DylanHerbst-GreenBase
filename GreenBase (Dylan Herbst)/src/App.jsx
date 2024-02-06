@@ -14,10 +14,9 @@ function App() {
   return (
     <>
     <UserProvider>
-    {/* <NavBar></NavBar> */}
- {/* <PricingPage></PricingPage> */}
+
  <AppRoutes></AppRoutes>
- {/* <SideBar></SideBar> */}
+
  </UserProvider>
     </>
   )

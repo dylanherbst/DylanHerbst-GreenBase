@@ -12,7 +12,7 @@ function AppRoutes(props) {
     <Routes>
         
    <Route path="/pricepage" element={<ProtectedRoute><PricingPage/></ProtectedRoute>} />
-    <Route path="/signIn" element={<LoginForm />} />
+    <Route path="/" element={<LoginForm />} />
 
     </Routes>
     </Router>

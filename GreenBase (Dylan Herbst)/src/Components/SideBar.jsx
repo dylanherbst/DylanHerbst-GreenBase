@@ -62,7 +62,10 @@ export default function SideBar() {
       >
 
         <Toolbar />
-        <Box sx={{ overflow: 'auto', bgcolor: 'rgb(246, 243, 243)', height: '100vh' }}>
+
+        <Box 
+        component="main"
+        sx={{ overflow: 'auto', bgcolor: 'rgb(246, 243, 243)', height: '100vh' }}>
         <List>
   {menuItems.map((menuItem, index) => (
     <ListItem key={menuItem.text} disablePadding>

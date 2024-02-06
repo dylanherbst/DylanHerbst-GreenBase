@@ -83,12 +83,12 @@ const tiers = [
 ];
 
 
-// TODO remove, this demo shouldn't need to reset the theme.
+
 const defaultTheme = createTheme();
 
 export default function PricingPage() {
 
-  const [billingCycle, setBillingCycle] = useState('monthly'); // default to monthly
+  const [billingCycle, setBillingCycle] = useState('monthly'); 
 
   const handleBillingChange = (cycle) => {
     setBillingCycle(cycle === 'monthly' ? 'annually' : 'monthly');
@@ -161,7 +161,7 @@ export default function PricingPage() {
           </Button>
         </Box>
       </Container>
-      {/* End hero unit */}
+    
 
       <Container maxWidth="md" component="main">
   <Grid container spacing={5} alignItems="flex-end">
@@ -175,7 +175,6 @@ export default function PricingPage() {
       >
      <Card sx={{ minHeight: '500px', display: 'flex', flexDirection: 'column' }}>
   <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', alignItems: 'flex-start', pt: 2, pb: 2 }}>
-    {/* Adjusted padding for top and bottom */}
     <Box sx={{ display: 'flex', alignItems: 'baseline' }}>
     <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
                 ${tier.price}
@@ -185,13 +184,13 @@ export default function PricingPage() {
               </Typography>
               </Box>
     <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 1 }}>
-      {tier.plan} {/* Plan */}
+      {tier.plan}
     </Typography>
     <Typography variant="subtitle1" sx={{ color: 'text.secondary', mb: 2 }}>
-      {tier.subheader} {/* Subheader */}
+      {tier.subheader} 
     </Typography>
 
-    {/* Description List */}
+
     <br></br>
     <ul>
       {tier.description.map((line, index) => (
